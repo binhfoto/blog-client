@@ -17,6 +17,12 @@
     "jeet": "6.1.2",
     "lodash": "^3.10.0",
     "normalize.css": "3.0.3",
+    "gulp": "^3.9.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-template": "^3.0.0",
+    "gulp-todoist": "0.0.2",
+    "webpack": "^1.10.1",
+    "webpack-stream": "^2.0.0",
     "rupture": "^0.6.1"
   },
   "devDependencies": {
