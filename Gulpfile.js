@@ -17,7 +17,7 @@ var paths = {
   js: 'client/app/**/*!(.spec.js).js',
   styl: ['client/app/**/*.styl', 'client/style/**/*.styl'],
   image: ['client/images/**/*.jpeg'],
-  toCopy: ['client/index.html'],
+  toCopy: ['client/index.html', 'client/images/cat.jpeg'],
   html: ['client/index.html', 'client/app/**/*.html'],
   dest: 'dist',
   blankTemplates: 'templates/component/*.**'
@@ -87,7 +87,14 @@ gulp.task('component', function(){
     .pipe(gulp.dest(destPath));
 });
 
+gulp.task('run', function(done) {
+  sync('build', 'copy', 'serve', 'watch', done)
+});
+
+/*gulp.task('default', function(done) {
+  sync('build', 'copy', 'serve', 'watch', done)
+});
 
 gulp.task('heroku:production', function(done) {
   sync('build', 'copy', 'serve', 'watch', done)
-});
+});*/
