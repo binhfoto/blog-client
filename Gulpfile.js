@@ -88,6 +88,6 @@ gulp.task('component', function(){
 });
 
 
-gulp.task('default', function(done) {
+gulp.task('heroku:production', function(done) {
   sync('build', 'copy', 'serve', 'watch', done)
 });
