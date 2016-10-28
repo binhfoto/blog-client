@@ -1,11 +1,10 @@
 {
-  "name": "ng-blog",
+  "name": "blog-client-lesson",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "gulp build",
-    "start": "gulp run",
+    "build": "gulp build",    
     "watch": "gulp watch"
   },
   "author": "",
